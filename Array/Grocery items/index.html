@@ -92,26 +92,30 @@
          displayInfo();
       }
 
-      function clearAll(index)
+      function clearAll()
       {
-        myItems.splice(index,myItems.length);
+        myItems.splice(0);
 
         displayInfo();
       }
 
-      function editItem(index)
+      function editItem()
       {
-        var item = document.getElementById("edit1").value;
-        
-        myItems.splice(index,1,item);
+        var item = document.getElementById("grocery").value;
+        var item1 = document.getElementById("edit1").value;
+        if(item == item1){
+          return item
+        }else{
+          return item1
+        }
 
-        deleteItem(index-10)
-        console.log(item)
+        // myItems.splice(index,item,item1);
+
+        // deleteItem(index-10)
+
         displayInfo();
 
       }
-
-      
 
 
 
