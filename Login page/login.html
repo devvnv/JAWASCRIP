@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="loguin.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>PERSONAL INFORMATION</h1>
+        <form class="commonpadding" name="form1">
+            <div class="user-detail">
+                <div class="input-box">
+                    <span class="details">User Name:</span>
+                    <input type="text" placeholder="Enter User Name" id="user"  onkeypress="myFunction(event)"  onKeyDown="limitText(this,15);" 
+                    onKeyUp="limitText(this,15);"">
+                    <span id="span" class="span1"> </span>
+                </div>
+            </div>
+
+            <div class="user-detail">
+            <div class="input-box">
+                <span class="details">Password:</span>
+                <input type="text" placeholder="Password"  id="pass">
+                <span id="passs" class="span1"> </span>
+            </div>
+            </div>
+
+            <div class="user-detail">
+                <div class="input-box">
+                    <span class="details">Confirm  password:</span>
+                    <input type="text" placeholder="Confirm  password" id="compass">
+                    <span id="compasss" class="span1"> </span>
+                </div>
+            </div>
+            <div class="user-detail">
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Email" id="email">
+                    <span id="emaill" class="span1"> </span>
+                </div>
+            </div>
+    <div class="user-detail">
+        <div class="input-box">
+            <span >Present address (Residence)</span>
+
+        </div>
+        <div class="input-box">
+            <span >Permanent address (Residence)</span>
+
+        </div>
+    </div>
+    <div class="user-detail">
+        <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="">
+        </div>
+        <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="">
+        </div>
+    </div>
+    <div class="user-detail">
+        <div class="input-box">
+            <span class="details">State</span>
+            <input class="w-30" type="text" placeholder="">
+            <span class="details">Zip Code</span>
+            <input class="w-30" type="text" placeholder="">
+        </div>
+        <div class="input-box">
+            <span class="details">State</span>
+            <input class="w-30" type="text" placeholder="">
+            <span class="details">Zip Code</span>
+            <input class="w-30" type="text" placeholder="">
+        </div>
+    </div>
+    <div class="user-detail">
+        <div class="input-box">
+            <span class="details">Country</span>
+            <input type="text" placeholder="">
+        </div>
+        <div class="input-box">
+            <span class="details">Country</span>
+            <input type="text" placeholder="">
+        </div>
+    </div>
+  
+</div>
+</form>
+   
+</div>
+
+<button type="button" class="btn btn-secondary btn-lg btn-block" onclick="validation()">Press to Submit</button>
+
+</body>
+<script src="login.js"></script>
+
+</html>

@@ -1,0 +1,30 @@
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 3.25rem;
+}
+
+
+.form-check-input {
+    position: absolute;
+    margin-top: 1.0rem;
+    margin-left: -0.05rem;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+

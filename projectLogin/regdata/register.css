@@ -1,0 +1,26 @@
+/* =--=-=-=-=-=-=-CSS RESET=-=-=-=-=-==-=-=-= */
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+.commonpadding{padding: 1s0px 0;}
+.container{max-width: 1200px; margin: auto;}
+.w-10{width: 8%;}
+.w-30{width: 27%;}
+.details{width: 20%; text-align: left; display: inline-block;}
+.id-pwd{ text-align: left; display: inline-block;}
+
+
+h1{font-size: 16px; text-align: center; color: #fff; background-color: red; margin: auto; padding: 20px 0; font-weight: bold;}
+
+.user-detail{display: flex; align-items: center; justify-content: center;}
+.input-box{width: 50%; padding: 10px 0;}
+input{ padding: 5px 12px; width: 55%;}
+.date{width: 7%;}
+.input-adj{width: auto; }
+
+.span1{ font-size: 12px; color: red; margin-left: 120px;}
+.btn1{margin: auto; justify-content: center; text-align: center; display: flex; margin-top: 10px; padding: 10px;}
+.btn{margin-left: 10px;}
+
+
+

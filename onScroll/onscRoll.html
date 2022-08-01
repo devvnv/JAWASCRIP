@@ -1,0 +1,25 @@
+<head>
+
+
+</head>
+
+<body>
+
+
+</body>
+<script>
+    const URL = 'https://fakestoreapi.com/products?limit='
+
+
+function funcData(fetch){
+     fetch(URL)
+        .then(response => response.json())
+        .then(data => {
+            let id = data[0].id
+            console.log(id);
+            return id
+        })
+    }
+    funcData
+
+</script>

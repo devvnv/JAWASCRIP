@@ -1,0 +1,88 @@
+<head>
+
+</head>
+<body>
+    <h1 id="test1">Username</h1>
+    <h2 id="test2">title</h2>
+
+    <script>
+    // https://jsonplaceholder.typicode.com/posts
+   // https://jsonplaceholder.typicode.com/users
+
+
+   async function showAvatar() {
+
+// read our JSON
+let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+let posts = await response.json();
+
+console.log(posts);
+
+// read github user
+let githubResponse = await fetch('https://jsonplaceholder.typicode.com/users');
+let users = await githubResponse.json();
+
+console.log(users);
+
+
+await new Promise((resolve, reject) => setTimeout(resolve, 1000));
+
+for(let i=0;i<users.length;i++){
+
+data1 = users[i].username;
+document.getElementById("test1").innerHTML = data1
+console.log(data1);
+
+data2 = posts[i].title
+document.getElementById("test2").innerHTML = data2
+console.log(data2);
+}
+
+return posts;
+}
+
+showAvatar();
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

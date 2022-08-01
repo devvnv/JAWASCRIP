@@ -95,11 +95,10 @@ const reviews = [
 
       function disaplyInfo()
       {
-
         document.getElementById("author").innerHTML = reviews[index].name;
-
-
-
+        document.getElementById("person-img").innerHTML = reviews[index].img;
+        document.getElementById("info").innerHTML = reviews[index].text;
+        document.getElementById("job").innerHTML = reviews[index].job;
       }
 
       function next()
@@ -107,9 +106,8 @@ const reviews = [
         index = index +1;
         disaplyInfo();
       }
-      function pre()
+      function prev()
       {
-
         index = index -1;
         disaplyInfo();
       }

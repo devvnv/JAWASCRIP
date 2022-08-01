@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <script>
+
+const module = {
+  address1: "street no 4 ",
+  address2 : "near west andheri",
+  zipcode: "362001",
+  getfullAddress: function() {
+    return this.address1 + ' ' + this.address2 + ' ' + this.zipcode ;
+  }
+};
+ 
+const unboundGetX = module.getfullAddress;
+//console.log(unboundGetX());
+
+ const boundGetX = module.getfullAddress.bind(module);
+ console.log(boundGetX());
+
+
+        </script>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <input type="text" placeholder="type here" id="d">
+    </body>
+    <script>
+
+
+// const URl = 'https://jsonplaceholder.typicode.com/posts'
+// fetch (URl)
+// .then(y => y.json())
+// .then(y=>{
+//     console.log(y)
+//     return y 
+// })
+// .then(y => console.log(y[0]))
+
+
+function debounce(fun,delay){
+    let timeoutId
+    return function (...args){
+        if(timeoutId){
+            clearTimeout(timeoutId)
+        }
+        timeoutId = setTimeout(()=>{
+            fun.call(this,...args)
+        },delay)
+       
+    }
+}
+
+const data = document.getElementById("d")
+
+function finfSugg(){
+    console.log(data.value);
+}
+const decoFunc = debounce(finfSugg,500)
+
+data.addEventListener("input",decoFunc)
+
+
+    </script>
+</html>
